@@ -48,7 +48,7 @@ const PostList = () => {
         <div>Error: {error}</div>
       ):(
         <>
-          <Button className='' variant='secondary' onClick={toggleSortOrder}>{sortAsc ? 'Sort A-Z' : 'Sort Z-A'}</Button>
+          <Button variant='secondary' onClick={toggleSortOrder}>{sortAsc ? 'Sort A-Z' : 'Sort Z-A'}</Button>
           {sortedPosts.map((post) => (
             <PostItem key={post.id} post={post} />
           ))}

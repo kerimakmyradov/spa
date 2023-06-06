@@ -1,6 +1,5 @@
 import { createActions } from "redux-actions";
 
-
 // create redux actions using createActions from redux-actions
 export const{fetchPosts, fetchPostsSuccess, fetchPostsFailure}=createActions({
     FETCH_POSTS:undefined,
